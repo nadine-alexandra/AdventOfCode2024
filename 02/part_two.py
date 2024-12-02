@@ -6,7 +6,7 @@ result = 0
 def check_report(d):
     # check if levels are all increasing or decreasing
     if (d > 0).all() or (d < 0).all():
-        if (np.absolute(diff) > 3).sum() == 0:
+        if (np.absolute(d) > 3).sum() == 0:
             return True
 
     return False
